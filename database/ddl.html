@@ -27,17 +27,17 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="navbar-brand" href="index.html">Home</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Articles</a>
+            <a class="nav-link js-scroll-trigger active" href="index.html#articles">Articles</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link js-scroll-trigger active" href="index.html#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -66,14 +66,34 @@
                         <li>Create Function berfungsi untuk membuat fungsi pada database</li>
                         <li>Create index berfungsi untuk membuat index pada database</li>
                         <li>Create procedur berfungsi untuk membuat procedure pada data dase</li>
+                        <ul>Syntax dasar:</ul>
+                        <ul>CREATE DATABASE database_nama</ul>
+                        <ul>dan</ul>
+                        <ul>CREATE TABLE(</br>
+                          Column_name1 table_nama data_type</br>
+                          Column_name2 table_nama data_type</br>
+                          Column_name3 table_nama data_type</br>
+                          )</ul></br>
+                        <ul>Contoh:</ul>
+                        <ul>CREATE DATABASE perpustakaan</ul>
+                        <ul>dan</ul>
+                        <ul>CREATE TABLE peminjam_buku(NIM int,Nama varchar (255),Kota varchar(255))</ul>
                     </ul>
     
                     <ul class="text-left" type="circle"><strong>Perintah Merubah (Alter)</strong>
                         <li>Perintah yang digunakan untuk merubah struktur dari sebuah tabel.</li>
+                        <ul>Syntax dasar:</ul>
+                        <ul>Alter tabel nama_tabel add nama_kolom tipe datanya.</ul></br>
+                        <ul>Contoh:</ul>
+                        <ul>alter table peminjam_buku add jenis_kelamin varchar(5)</ul>
                     </ul>
                     <ul class="text-left" type="circle"><strong>Perintah menghapus (Drop)</strong>
                         <li>Drop Database yaitu perintah yang berfungsi untuk menghapus database (Contoh: DROP nama_database;)</li>
                         <li>Drop Table yaitu perintah yang digunakan untuk menghapus tabel pada database</li>
+                        <ul>Syntax dasar untuk menghapus database</ul>
+                        <ul>DROP DATABASE nama_database;</ul></br>
+                        <ul>Syntax dasar untuk menghapus tabel:</ul>
+                        <ul>DROP TABLE nama_tabel;</ul>                        
                     </ul>
             </p>
           </div>
