@@ -27,17 +27,17 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="navbar-brand" href="index.html">Home</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Articles</a>
+            <a class="nav-link js-scroll-trigger active" href="index.html#articles">Articles</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link js-scroll-trigger active" href="index.html#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -64,22 +64,26 @@
             </p>
             <ul class="text-left" type="circle"><strong>Berikut adalah perintah umum yang digunakan oleh DML:</strong>
 
-                <li>Select adalah perintah yang paling sering digunakan pada SQL, sehingga kadang-kadang istilah query dirujukkan pada perintah select. 
-                Select digunakan untuk menampilkan data dari satu atau lebih tabel, biasanya dalam sebuah basis data yang sama.</li>
+            <li>Select adalah perintah yang paling sering digunakan pada SQL, sehingga kadang-kadang istilah query dirujukkan pada perintah select. 
+            Select digunakan untuk menampilkan data dari satu atau lebih tabel, biasanya dalam sebuah basis data yang sama.</li>
             <li>Insert digunakan untuk menambah data baru.</li>
             <li>Update digunakan untuk mengubah data yang sudah ada.</li>
             <li>Delete digunakan untuk menghapus sebuah data.</li>
             </ul>
-            <p>Contoh:
-            </br>SELECT * FROM Buku;
+            <p><b>Contoh SELECT:</b>
+            </br>SELECT * FROM peminjam_buku;
             </br>
-            UPDATE Buku SET Judul_buku = “Programmer” WHERE id = 1123;
-            </br>
-            INSERT INTO Buku (id,kode_buku,judul_buku,tanggal_terbit) values(1124, “KoD2″, “Desainer”, “2013-01-11″);
+            <p><b>Contoh INSERT:</b><br>
+            INSERT INTO peminjam_buku (nim, nama, tanggal_lahir, kota) values(L200170999, “Ardita″, “2013-01-11″, "Purwodadi");</br>
+            <p><b>Contoh UPDATE:</b></br>
+            UPDATE peminjam_buku SET kota = “Surakarta” WHERE nim = L200170068;</br>
+            <p><b>Contoh DELETE:</b></br>
+            DELETE FROM siswa WHERE nim = 'L2001700999';</br>
             </p>
-            <p>Pada contoh perintah DML (Data Manipulation Language) di atas terdapat tiga perintah yang memiliki fungsi berbeda, pada baris pertama adalah perintah yang berfungsi untuk menapilkan data, di sana terdapat perintah utamanya adalah SELECT yang artinya menampilkan, kemudian di ikuti kode bintang yang artinya ‘semua’. Di ikuti kode FROM Buku yang memiliki arti dari Table Buku, Jika di baca secara lengkap akan berbunyi Menampilkan seluruh data yang terdapat pada table buku.</p>
-            <p>Kemudian pada baris kedua terdapat perintah yang menggunakan kode utama UPDATE Buku yang artinya akan mengubah data yang sudah ada pada table buku, di ikuti dengan SET Judul_buku = ‘Programmer’, yang artinya data yang sudah ada akan di ubah dengan kata ‘Programmer’. lalu apa yang akan di ubah? yaitu terdapat pada kode terakhir WHERE id=’123′, judul buku yang akan di ubah dengan ‘programmer’ adalah judul buku yang memiliki id 123.</p>
-            <p>Terakhir ada baris kode yang berfungsi untuk menambahkan data, di sana terdapat fungsi INSERT INOT Buku, yang artinya data akan di masukan ke dalam table Buku yang di ikuti dengan nama-nama kolomnya secara urut. Kemudia di ikuti Values dengan isi data sesuai urutan nama kolomnya, terakhir di tutup dengan tanda petik dua pada setiap perintah SQL.</p>
+            <p>Pada contoh perintah DML (Data Manipulation Language) di atas terdapat tiga perintah yang memiliki fungsi berbeda, pada baris pertama adalah perintah yang berfungsi untuk menapilkan data, di sana terdapat perintah utamanya adalah SELECT yang artinya menampilkan, kemudian di ikuti kode bintang yang artinya ‘semua’. Di ikuti kode FROM prminjam_buku yang memiliki arti dari Table peminjam_buku, Jika di baca secara lengkap akan berbunyi Menampilkan seluruh data yang terdapat pada table buku.</p>
+            <p>Kemudian ada baris kode yang berfungsi untuk menambahkan data, di sana terdapat fungsi INSERT INTO peminjam_buku, yang artinya data akan di masukan ke dalam table peminjam_buku yang di ikuti dengan nama-nama kolomnya secara urut. Kemudian di ikuti Values dengan isi data sesuai urutan nama kolomnya, terakhir di tutup dengan tanda petik dua pada setiap perintah SQL.</p>
+            <p>Pada baris ketiga terdapat perintah yang menggunakan kode utama UPDATE peminjam_buku yang artinya akan mengubah data yang sudah ada pada table peminjam_buku, di ikuti dengan SET kota = “Surakarta”, yang artinya data yang sudah ada akan di ubah dengan kata ‘Surakarta’. Lalu apa yang akan di ubah? yaitu terdapat pada kode terakhir WHERE nim=’L200170068′, kota yang akan di ubah dengan ‘Surakarta’ adalah kota yang memiliki nim L200170068.</p>
+            <p>Terakhir pada baris keempat digunakan untuk menghapus record dengan NIM ‘L200170999’, ingat bahwa NIM tersebut di gunakan oleh siswa bernama ‘Ardita’ dan dengan di eksekusinya perintah DELETE ini maka record tersebut akan terhapus.</p></br>
           </div>
         </div>
       </div>
