@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Database Management System</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/one-page-wonder.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger active" href="index.html#articles">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger active" href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+      <div class="container">
+          <h1></h1>
+      </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        </div>
+        <div class="col-lg-12 order-lg-1">
+          <div class="p-5">
+            <h1> </h1>
+            </br>
+            <h1>Data Manipulation Language</h1>
+            <p>
+            DML atau Data Manipulation Language adalah kumpulan perintah SQL yang berhubungan dengan pekerjaan mengolah data di dalam table.
+            </p>
+            <ul class="text-left" type="circle"><strong>Berikut adalah perintah umum yang digunakan oleh DML:</strong>
+
+            <li>Select adalah perintah yang paling sering digunakan pada SQL, sehingga kadang-kadang istilah query dirujukkan pada perintah select. 
+            Select digunakan untuk menampilkan data dari satu atau lebih tabel, biasanya dalam sebuah basis data yang sama.</li>
+            <li>Insert digunakan untuk menambah data baru.</li>
+            <li>Update digunakan untuk mengubah data yang sudah ada.</li>
+            <li>Delete digunakan untuk menghapus sebuah data.</li>
+            </ul>
+            <p><b>Contoh SELECT:</b>
+            </br>SELECT * FROM peminjam_buku;
+            </br>
+            <p><b>Contoh INSERT:</b><br>
+            INSERT INTO peminjam_buku (nim, nama, tanggal_lahir, kota) values(L200170999, “Ardita″, “2013-01-11″, "Purwodadi");</br>
+            <p><b>Contoh UPDATE:</b></br>
+            UPDATE peminjam_buku SET kota = “Surakarta” WHERE nim = L200170068;</br>
+            <p><b>Contoh DELETE:</b></br>
+            DELETE FROM siswa WHERE nim = 'L2001700999';</br>
+            </p>
+            <p>Pada contoh perintah DML (Data Manipulation Language) di atas terdapat tiga perintah yang memiliki fungsi berbeda, pada baris pertama adalah perintah yang berfungsi untuk menapilkan data, di sana terdapat perintah utamanya adalah SELECT yang artinya menampilkan, kemudian di ikuti kode bintang yang artinya ‘semua’. Di ikuti kode FROM prminjam_buku yang memiliki arti dari Table peminjam_buku, Jika di baca secara lengkap akan berbunyi Menampilkan seluruh data yang terdapat pada table buku.</p>
+            <p>Kemudian ada baris kode yang berfungsi untuk menambahkan data, di sana terdapat fungsi INSERT INTO peminjam_buku, yang artinya data akan di masukan ke dalam table peminjam_buku yang di ikuti dengan nama-nama kolomnya secara urut. Kemudian di ikuti Values dengan isi data sesuai urutan nama kolomnya, terakhir di tutup dengan tanda petik dua pada setiap perintah SQL.</p>
+            <p>Pada baris ketiga terdapat perintah yang menggunakan kode utama UPDATE peminjam_buku yang artinya akan mengubah data yang sudah ada pada table peminjam_buku, di ikuti dengan SET kota = “Surakarta”, yang artinya data yang sudah ada akan di ubah dengan kata ‘Surakarta’. Lalu apa yang akan di ubah? yaitu terdapat pada kode terakhir WHERE nim=’L200170068′, kota yang akan di ubah dengan ‘Surakarta’ adalah kota yang memiliki nim L200170068.</p>
+            <p>Terakhir pada baris keempat digunakan untuk menghapus record dengan NIM ‘L200170999’, ingat bahwa NIM tersebut di gunakan oleh siswa bernama ‘Ardita’ dan dengan di eksekusinya perintah DELETE ini maka record tersebut akan terhapus.</p></br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="m-0 text-center text-white small">Copyright &copy; L200170068 - 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
